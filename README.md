@@ -8,11 +8,16 @@ This my is keymap for lily58 rev1 split keyboard
 1. Download tools
   - [QMK MSYS](https://msys.qmk.fm/) for creating keymap file for your keyboard.
   - [QMK Toolbox](https://qmk.fm/toolbox) for flashing keyboard.
+  - Open QMK MSYS and setup it.
+```
+qmk setup
+"Clone qmk_firmware [y/n]: y
+```
 
 2. Clone files
 On Windows:
 ```
-dir %USERPROFILE%\qmk_firmware\keyboards\lily58\keymaps
+cd %USERPROFILE%\qmk_firmware\keyboards\lily58\keymaps
 git clone https://github.com/Ompsuli/ompsuli-lily58-keymap.git
 ```
 

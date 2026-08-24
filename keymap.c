@@ -60,8 +60,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Tab  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |  END |   I  |  O   |  P   |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCTRL |  F2  |  F3  |  F4  |  F5  |  F6  |-------.    ,-------|      | Left | Down |  Up  |Right |      |
- * |------+------+------+------+------+------|   Å   |    |   <   |------+------+------+------+------+------|
- * |LShift|   Z  |  F9  | F10  | F11  | F12  |-------|    |-------|   +  |   -  |   =  |   [  |   ]  |   \  |
+ * |------+------+------+------+------+------|   Å   |    |   |   |------+------+------+------+------+------|
+ * |LShift|   Z  |  F9  | F10  | F11  | F12  |-------|    |-------|   +  |   -  |   =  |   [  |   ~  |   \  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| AltCtl |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_ESC, KC_1,       ALGR(FI_2), ALGR(FI_3), ALGR(FI_4), ALGR(FI_5),       KC_6,     ALGR(FI_7), ALGR(FI_8), ALGR(FI_9), ALGR(FI_0), KC_DEL,
   KC_TAB,  KC_Q,        KC_W,      KC_E,       KC_R,        KC_T,           KC_Y,       KC_END,     KC_I,         KC_O,      KC_P,    _______,
   KC_LCTRL, KC_F2,      KC_F3,     KC_F4,     KC_F5,        KC_F6,        XXXXXXX,      KC_LEFT,   KC_DOWN,      KC_UP,    KC_RGHT,   XXXXXXX,
-  KC_LSFT,  KC_Z,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______, _______,  KC_MINS, KC_SLSH, S(FI_0),  ALGR(FI_8), ALGR(FI_9), ALGR(FI_PLUS),
+  KC_LSFT,  KC_Z,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______, ALGR(FI_LABK),  KC_MINS, KC_SLSH, S(FI_0),  ALGR(FI_8), S(KC_NUHS), ALGR(FI_PLUS),
                              KC_LALT, _______, _______,  _______, _______,  _______, _______, _______
 ),
 /* ADJUST
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |-------.    ,-------|      |      |RGB ON| HUE+ | SAT+ | VAL+ |
- * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+ * |------+------+------+------+------+------|B DOWN |    | B UP  |------+------+------+------+------+------|
  * |      |      |      |      |      |      |-------|    |-------|      |      | MODE | HUE- | SAT- | VAL- |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| AltCtl |
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                              _______, _______, _______, _______, _______,  _______, _______, _______
   )
 };
