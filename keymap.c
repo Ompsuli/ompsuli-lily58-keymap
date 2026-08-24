@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  [_QWERTY] = LAYOUT(
   KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_NUHS,
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    FI_PLUS,
-  KC_LCTRL, KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,    KC_J,    KC_K,    KC_L,    FI_ODIA, FI_ADIA,
+  KC_LCTL, KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                     KC_H,    KC_J,    KC_K,    KC_L,    FI_ODIA, FI_ADIA,
   KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_LBRC,   FI_LABK,  KC_N,    KC_M,    KC_COMM, KC_DOT,  FI_MINS,  KC_RSFT,
                         KC_LALT, KC_LGUI, MO(_LOWER), KC_SPC, KC_ENT, TT(_RAISE), KC_BSPC, KC_ALGR
 ),
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT(
   KC_F1,   KC_F2,   KC_F3,  KC_F4,  KC_F5,  S(FI_7),                    KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
   FI_GRV,   FI_DLR,   KC_7,   KC_8,   KC_9,   S(KC_NUHS),               KC_F6,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-  KC_LCTRL, FI_HASH,  KC_4,   KC_5,   KC_6,   FI_MINS,                   S(FI_DIAE), S(FI_6), S(FI_QUOT), S(FI_8), S(FI_9), S(FI_7),
+  KC_LCTL, FI_HASH,  KC_4,   KC_5,   KC_6,   FI_MINS,                   S(FI_DIAE), S(FI_6), S(FI_QUOT), S(FI_8), S(FI_9), S(FI_7),
   KC_LSFT, KC_COMM, KC_1,   KC_2,   KC_3,   FI_PLUS, _______, _______, XXXXXXX, S(FI_MINS), KC_MINS, ALGR(FI_7), ALGR(FI_0), ALGR(FI_LABK),
                              KC_LALT, KC_0, _______, _______, _______,  _______, _______, _______
 ),
@@ -71,8 +71,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RAISE] = LAYOUT(
   KC_ESC, KC_1,       ALGR(FI_2), ALGR(FI_3), ALGR(FI_4), ALGR(FI_5),       KC_6,     ALGR(FI_7), ALGR(FI_8), ALGR(FI_9), ALGR(FI_0), KC_DEL,
   KC_TAB,  KC_Q,        KC_W,      KC_E,       KC_R,        KC_T,           KC_Y,       KC_END,     KC_I,         KC_O,      KC_P,    _______,
-  KC_LCTRL, KC_F2,      KC_F3,     KC_F4,     KC_F5,        KC_F6,        XXXXXXX,      KC_LEFT,   KC_DOWN,      KC_UP,    KC_RGHT,   XXXXXXX,
-  KC_LSFT,  KC_Z,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______, ALGR(FI_LABK),  KC_MINS, KC_SLSH, S(FI_0),  ALGR(FI_8), S(KC_NUHS), ALGR(FI_PLUS),
+  KC_LCTL, KC_F2,      KC_F3,     KC_F4,     KC_F5,        KC_F6,        XXXXXXX,      KC_LEFT,   KC_DOWN,      KC_UP,    KC_RGHT,   XXXXXXX,
+  KC_LSFT,  KC_Z,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______, ALGR(FI_LABK),  KC_MINS, KC_SLSH, S(FI_0),  ALGR(FI_8), FI_TILD , ALGR(FI_PLUS),
                              KC_LALT, _______, _______,  _______, _______,  _______, _______, _______
 ),
 /* ADJUST
