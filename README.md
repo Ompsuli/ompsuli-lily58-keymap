@@ -23,9 +23,10 @@ git clone https://github.com/Ompsuli/ompsuli-lily58-keymap.git
 
 3. Create keymap file
   - Open QMK MSYS
-  - Write `qmk compile -kb qmk_firmware/keyboards/lily58/rev1 -km ompsuli-lily58-keymap`
+  - Write `qmk compile -kb lily58/rev1 -km ompsuli-lily58-keymap`
 
 4. Flash your keyboard
    - Open QMK Toolbox
-   - Choose HEX-file (My path: %USERPROFILE%/qmk_firmware/lily58_rev1_default.hex
+   - Choose HEX-file (My path: %USERPROFILE%/qmk_firmware/lily58_rev1_ompsuli_lily58-keymap.hex
+   - Restart/Reconnect your keyboard
    - Press Flash
